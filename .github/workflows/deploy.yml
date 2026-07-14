@@ -19,7 +19,7 @@ jobs:
           coverage: none
 
       - name: Install Composer dependencies
-        run: composer install --prefer-dist --no-progress --no-interaction --config policy.advisories.block=false
+        run: composer install --prefer-dist --no-progress --no-interaction
 
       - name: Copy .env for testing
         run: cp .env.example .env || true
